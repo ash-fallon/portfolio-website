@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-20 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       {/* Logo */}
-      <div className='text-2xl'>{`<Ash Fallon />`}</div>
+      <div className='text-2xl text-pink-600'>{`<Ash Fallon />`}</div>
 
       {/* Menu */}
       <ul className='hidden md:flex'>
