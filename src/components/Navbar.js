@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-20 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       {/* Logo */}
-      <div className='text-2xl text-pink-600'>{`<Ash Fallon />`}</div>
+      <div className='text-2xl text-pink-500'>{`<Ash Fallon />`}</div>
 
       {/* Menu */}
       <ul className='hidden md:flex'>
@@ -23,8 +23,8 @@ const Navbar = () => {
 
       {/* Hamburger menu */}
       <div onClick={clickHandler} className='md:hidden z-10'>
-        {nav && <FaBars />}
-        {!nav && <FaTimes />}
+        {!nav && <FaBars />}
+        {nav && <FaTimes />}
       </div>
 
       {/* Mobile menu */}
