@@ -19,10 +19,11 @@ const Navbar = () => {
     },
   ];
 
-  const socialsOutput = socials.map(social => {
+  const socialsOutput = socials.map((social, index) => {
     return (
       <li
         className={`w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${social.colour}`}
+        key={index}
       >
         <a
           className='flex justify-between items-center w-full text-gray-300'
@@ -37,7 +38,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-20 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       {/* Logo */}
-      <div className='text-2xl text-pink-500'>{`<Ash Fallon />`}</div>
+      <div className='text-2xl text-pink-600'>{`<Ash Fallon />`}</div>
 
       {/* Menu */}
       <ul className='hidden md:flex'>
