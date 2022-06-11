@@ -7,6 +7,33 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const clickHandler = () => setNav(!nav);
 
+  const socials = [
+    { name: 'LinkedIn', icon: FaLinkedin, url: '/', colour: 'bg-blue-700' },
+    { name: 'Github', icon: FaGithub, url: '/', colour: 'bg-[#333333]' },
+    { name: 'Email', icon: HiOutlineMail, url: '/', colour: 'bg-[#6fc2b0]' },
+    {
+      name: 'CV',
+      icon: BsFillPersonLinesFill,
+      url: '/',
+      colour: 'bg-[#565f69]',
+    },
+  ];
+
+  const socialsOutput = socials.map(social => {
+    return (
+      <li
+        className={`w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${social.colour}`}
+      >
+        <a
+          className='flex justify-between items-center w-full text-gray-300'
+          href={social.url}
+        >
+          {social.name} <social.icon size={30} />
+        </a>
+      </li>
+    );
+  });
+
   return (
     <div className='fixed w-full h-20 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       {/* Logo */}
@@ -17,7 +44,7 @@ const Navbar = () => {
         <li>Home</li>
         <li>About</li>
         <li>Skills</li>
-        <li>Work</li>
+        <li>Projects</li>
         <li>Contact</li>
       </ul>
 
@@ -44,40 +71,7 @@ const Navbar = () => {
 
       {/* Social Icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-700'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-              LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className='w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className='w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-          <li className='w-40 h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-              CV <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-        </ul>
+        <ul>{socialsOutput}</ul>
       </div>
     </div>
   );
