@@ -19,8 +19,9 @@ const About = () => {
               I'm passionate about building excellent software that improves the
               lives of those around me. I specialize in creating software for
               clients ranging from individuals to small-businesses all the way
-              to large enterprise corporations. What would you do if you had a
-              software expert at your fingertips?
+              to large enterprise corporations. If this interests you, send me a
+              message via the form or at my email - ash@ashfallon.com. I look
+              forward to hearing from you.
             </p>
           </div>
         </div>

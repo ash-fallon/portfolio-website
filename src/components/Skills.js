@@ -3,9 +3,7 @@ import CSS from '../img/css.png';
 import JS from '../img/javascript.png';
 import ReactImg from '../img/react.png';
 import Tailwind from '../img/tailwind.png';
-import Firebase from '../img/firebase.png';
 import Git from '../img/git.png';
-import Github from '../img/github.png';
 
 const Skills = () => {
   const icons = [
@@ -14,9 +12,7 @@ const Skills = () => {
     { icon: JS, name: 'JavaScript' },
     { icon: ReactImg, name: 'React' },
     { icon: Tailwind, name: 'TailwindCSS' },
-    { icon: Firebase, name: 'Firebase' },
     { icon: Git, name: 'Git' },
-    { icon: Github, name: 'Github' },
   ];
 
   const iconOutput = icons.map((icon, index) => {
@@ -45,7 +41,7 @@ const Skills = () => {
           </p>
           <p className='py-4'>{`// These are the technologies I've worked with.`}</p>
         </div>
-        <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
           {iconOutput}
         </div>
       </div>

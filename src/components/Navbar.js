@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -9,7 +9,12 @@ const Navbar = () => {
   const clickHandler = () => setNav(!nav);
 
   const socials = [
-    { name: 'LinkedIn', icon: FaLinkedin, url: '/', colour: 'bg-blue-700' },
+    {
+      name: 'LinkedIn',
+      icon: FaLinkedin,
+      url: 'https://www.linkedin.com/in/ashfallon',
+      colour: 'bg-blue-700',
+    },
     {
       name: 'Github',
       icon: FaGithub,
@@ -24,8 +29,8 @@ const Navbar = () => {
     },
     {
       name: 'CV',
-      icon: BsFillPersonLinesFill,
-      url: '/',
+      icon: IoDocumentTextOutline,
+      url: 'https://drive.google.com/file/d/1wp_nhbThlsaOrUnAf1L3NQLOG1QsbQ4O/view?usp=sharing',
       colour: 'bg-[#565f69]',
     },
   ];

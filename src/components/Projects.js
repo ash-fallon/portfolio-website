@@ -1,6 +1,13 @@
+import Portfolio from '../img/portfolio-img.PNG';
+
 const Projects = () => {
   const projects = [
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
+    {
+      name: 'My portfolio website',
+      demoUrl: 'https://www.ashfallon.com',
+      codeUrl: 'https://github.com/ash-fallon/portfolio-website',
+      img: Portfolio,
+    },
     { name: '', demoUrl: '', codeUrl: '', img: '' },
     { name: '', demoUrl: '', codeUrl: '', img: '' },
     { name: '', demoUrl: '', codeUrl: '', img: '' },
@@ -11,6 +18,7 @@ const Projects = () => {
   const projectsOutput = projects.map((project, index) => {
     return (
       <div
+        style={{ backgroundImage: `url(${project.img})` }}
         className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
         key={index}
       >
@@ -22,12 +30,12 @@ const Projects = () => {
           </span>
 
           <div className='pt-8 text-center'>
-            <a href={`${project.demoUrl}`}>
+            <a href={`${project.demoUrl}`} target='_blank' rel='noreferrer'>
               <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                 Demo
               </button>
             </a>
-            <a href={`${project.codeUrl}`}>
+            <a href={`${project.codeUrl}`} target='_blank' rel='noreferrer'>
               <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                 Code
               </button>
