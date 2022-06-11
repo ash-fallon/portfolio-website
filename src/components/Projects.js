@@ -4,7 +4,7 @@ const Projects = () => {
   const projects = [
     {
       name: 'My portfolio website',
-      demoUrl: 'https://www.ashfallon.com',
+      demoUrl: 'http://ashfallon.com',
       codeUrl: 'https://github.com/ash-fallon/portfolio-website',
       img: Portfolio,
     },
