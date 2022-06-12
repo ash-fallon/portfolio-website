@@ -24,13 +24,13 @@ const Navbar = () => {
     {
       name: 'Email',
       icon: HiOutlineMail,
-      url: 'mailto:ash@ashfallon.com',
+      url: '',
       colour: 'bg-[#6fc2b0]',
     },
     {
       name: 'CV',
       icon: IoDocumentTextOutline,
-      url: 'https://drive.google.com/file/d/1wp_nhbThlsaOrUnAf1L3NQLOG1QsbQ4O/view?usp=sharing',
+      url: '',
       colour: 'bg-[#565f69]',
     },
   ];

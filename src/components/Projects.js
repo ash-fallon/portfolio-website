@@ -1,18 +1,22 @@
 import Portfolio from '../img/portfolio-img.PNG';
+import WeatherApp from '../img/weather-app.png';
 
 const Projects = () => {
   const projects = [
     {
-      name: 'My portfolio website',
+      name: 'Complex Weather App',
+      demoUrl: 'https://ashfallon-weather-app.netlify.app/',
+      codeUrl: 'https://github.com/ash-fallon/weather-app',
+      img: WeatherApp,
+    },
+    { name: '', demoUrl: '', codeUrl: '', img: '' },
+    { name: '', demoUrl: '', codeUrl: '', img: '' },
+    {
+      name: 'Portfolio Webpage',
       demoUrl: 'http://ashfallon.com',
       codeUrl: 'https://github.com/ash-fallon/portfolio-website',
       img: Portfolio,
     },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
   ];
 
   const projectsOutput = projects.map((project, index) => {
@@ -22,7 +26,6 @@ const Projects = () => {
         className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
         key={index}
       >
-        {/* style={{backgroundImage: `url(${project.img})`}} add into div above later for projects */}
         {/* Hover Effects */}
         <div className='opacity-0 group-hover:opacity-100 '>
           <span className='text-2xl font-bold text-white tracking-wider'>
@@ -60,7 +63,7 @@ const Projects = () => {
         </div>
 
         {/* Container */}
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 gap-4'>
+        <div className='grid sm:grid-cols-2 gap-4'>
           {/* Grid Item */}
           {projectsOutput}
         </div>
