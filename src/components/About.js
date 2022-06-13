@@ -14,14 +14,20 @@ const About = () => {
           <div className='sm:text-right text-4xl font-bold'>
             <p>Hi, I'm Ash. Nice to meet you. Please take a look around.</p>
           </div>
-          <div>
-            <p>
+          <div className='space-y-2 pt-1'>
+            <p className='text-justify'>
               I'm passionate about building excellent software that improves the
-              lives of those around me. I specialize in creating software for
-              clients ranging from individuals to small-businesses all the way
-              to large enterprise corporations. If this interests you, send me a
-              message via the form or at my email - ash@ashfallon.com. I look
-              forward to hearing from you.
+              lives of those around me and constantly strive to learn new
+              things.
+            </p>
+            <p className='text-justify'>
+              I specialize in creating software for clients ranging from
+              individuals to small-businesses all the way to large enterprise
+              corporations.
+            </p>
+            <p className='text-justify'>
+              If this interests you, send me a message via the form or at my
+              email - ash@ashfallon.com.
             </p>
           </div>
         </div>

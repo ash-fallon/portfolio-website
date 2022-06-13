@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { Link } from 'react-scroll';
 
@@ -22,16 +21,10 @@ const Navbar = () => {
       colour: 'bg-[#333333]',
     },
     {
-      name: 'Email',
-      icon: HiOutlineMail,
-      url: '',
-      colour: 'bg-[#6fc2b0]',
-    },
-    {
       name: 'CV',
       icon: IoDocumentTextOutline,
       url: '',
-      colour: 'bg-[#565f69]',
+      colour: 'bg-[#6fc2b0]',
     },
   ];
 

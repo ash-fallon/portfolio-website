@@ -1,15 +1,21 @@
 import Portfolio from '../img/portfolio-img.PNG';
 import WeatherApp from '../img/weather-app.png';
+import surge from '../img/surge.jpg';
 
 const Projects = () => {
   const projects = [
+    {
+      name: 'Surge Analytics',
+      demoUrl: 'https://ashfallon-surge-analytics.netlify.app/',
+      codeUrl: 'https://github.com/ash-fallon/surge-analytics',
+      img: surge,
+    },
     {
       name: 'Complex Weather App',
       demoUrl: 'https://ashfallon-weather-app.netlify.app/',
       codeUrl: 'https://github.com/ash-fallon/weather-app',
       img: WeatherApp,
     },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
     { name: '', demoUrl: '', codeUrl: '', img: '' },
     {
       name: 'Portfolio Webpage',
