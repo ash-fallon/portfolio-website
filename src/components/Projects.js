@@ -1,9 +1,16 @@
 import Portfolio from '../img/portfolio-img.PNG';
 import WeatherApp from '../img/weather-app.png';
 import surge from '../img/surge.jpg';
+import asset from '../img/asset-display-panel.png';
 
 const Projects = () => {
   const projects = [
+    {
+      name: 'Asset Display Panel',
+      demoUrl: 'https://ashfallon-asset-display-panel.netlify.app/',
+      codeUrl: 'https://github.com/ash-fallon/asset-display-panel',
+      img: asset,
+    },
     {
       name: 'Surge Analytics',
       demoUrl: 'https://ashfallon-surge-analytics.netlify.app/',
@@ -11,17 +18,16 @@ const Projects = () => {
       img: surge,
     },
     {
-      name: 'Complex Weather App',
-      demoUrl: 'https://ashfallon-weather-app.netlify.app/',
-      codeUrl: 'https://github.com/ash-fallon/weather-app',
-      img: WeatherApp,
-    },
-    { name: '', demoUrl: '', codeUrl: '', img: '' },
-    {
       name: 'Portfolio Webpage',
       demoUrl: 'http://ashfallon.com',
       codeUrl: 'https://github.com/ash-fallon/portfolio-website',
       img: Portfolio,
+    },
+    {
+      name: 'Complex Weather App',
+      demoUrl: 'https://ashfallon-weather-app.netlify.app/',
+      codeUrl: 'https://github.com/ash-fallon/weather-app',
+      img: WeatherApp,
     },
   ];
 
