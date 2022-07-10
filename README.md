@@ -93,7 +93,7 @@ If you get a version returned on either or both, you have it installed and can m
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:ash-fallon/asset-display-panel.git
+   git clone git@github.com:ash-fallon/portfolio-website.git
    ```
 2. Install NPM packages
    ```sh
