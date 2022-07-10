@@ -23,7 +23,7 @@ const Navbar = () => {
     {
       name: 'CV',
       icon: IoDocumentTextOutline,
-      url: '',
+      url: 'https://drive.google.com/file/d/17_feXxYsw8ZvyOKzacIqIG2LHBzYbkGz/view?usp=sharing',
       colour: 'bg-[#6fc2b0]',
     },
   ];
